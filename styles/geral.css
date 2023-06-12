@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+ /*COLORS*/ 
+ --main:#2A7AE4;
+ --background-e-white-font:#fff;
+ --background-footer:#EAF2FD;
+ --bt-primario-hover:#5595E9;
+ --bt-secundario-hover:#D4E4FA;
+ --raleway:'Raleway' ;
+ --dark-font: #464646;
+ --placeholder-form-font:#A2A2A2;
+
+
+
+ /*SIZES*/
+ --p52:52px;
+ --p32:32px;
+ --p22:22px;
+ --p16:16px;
+--p14:14px;
+
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--raleway);
+}
+body{
+  background-color: var(--background-e-white-font);
+}
+header{
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+  padding: 16px;
+}
+header button{
+  color: var(--main);
+  background-color: #fff;
+  height: 40px;
+  width: 133px;
+  top: 16px;
+  border-color: var(--main);
+  border: 1px solid;
+  font-size: var(--p14);
+  font-weight: 500;
+}
+header button:hover{
+  background-color: var(--bt-secundario-hover);
+  cursor: pointer;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #EAF2FD;
+}
+ul{
+  list-style: none;
+  text-align: center;
+
+}
+footer ul li{
+  padding: 5px;
+}
+footer svg{
+  padding: 5px;
+}
+a{
+  text-decoration: none;
+}
+
+footer h4{
+  text-align: left;
+  padding: 10px 5px;
+  color: #464646;
+}
+footer form{
+  text-align: left;
+}
+footer form .nome {
+  width:300px ;
+  height:50px ;
+  border: none;
+  padding: 5px;
+}
+textarea{
+  resize: none;
+  width: 300px;
+  height: 100px;
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+
+}
+label{
+  padding: 5px;
+}
+.footer-btn{
+  width: 150px;
+  height: 40px;
+  margin: 5px;
+  border: none;
+  background-color: var(--main);
+  color: #fff;
+}
