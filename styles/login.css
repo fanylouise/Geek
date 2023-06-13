@@ -1,0 +1,46 @@
+form.login{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f5f4f4;
+  padding: 50px;
+}
+
+.login h3{
+ font-size: var(--p16); 
+}
+.login #login{
+  width: 109px;
+height: 40px;
+background: #2A7AE4;
+border: none;
+color: #fff;
+padding: 5px;
+}
+.credencial{
+  padding: 5px;
+  margin: 5px;
+  background-color: #fff;
+  width: 275px;
+  height: 41px;
+  border-radius: 4px;
+  border: 0px;
+  color: #a2a2a2;
+  font-size: var(--p16);
+}
+@media (min-width:1024px){
+  .login h3{
+    font-size: var(--p22);
+  }
+  .credencial{
+    width: 423px;
+    height: 63px;
+    font-size: var(--p22);
+  }
+  .login #login{
+    width: 423px;
+  height: 63px;
+  font-size: var(--p22);
+  }
+}
