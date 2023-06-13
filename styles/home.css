@@ -42,7 +42,7 @@ div.head{
   padding: 5px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
 }
 .head a{
@@ -52,6 +52,7 @@ div.head{
   font-weight: 700;
   color: var(--main);
 }
+
 
 .produto-preco{
   font-size: var(--p16);
@@ -72,6 +73,9 @@ font-size: var(--p14);
 font-weight: 400;
 padding: 5px;
 }
+.l{
+  display: none;
+}
 .cs, .sw, .dv{
   padding: 5px;
 }
@@ -87,6 +91,24 @@ padding: 5px;
   .banner{
     height: 350px;
     background-image: url(/assets/bannerTablet.png);
+  }
+  .head h2{
+    margin-left: -70px;
+  }
+
+}
+@media (min-width:1024px){
+  .card{
+padding: 5px;
+  }
+  .head{
+    justify-content: space-between;
+  }
+  .l{
+    display: block;
+  }
+  .head h2{
+    margin-left: -200px;
   }
 
 }
