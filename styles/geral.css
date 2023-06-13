@@ -64,7 +64,7 @@ ul{
 
 }
 footer ul li{
-  padding: 5px;
+  padding: 10px;
 }
 footer svg{
   padding: 5px;
@@ -79,13 +79,17 @@ footer h4{
   color: #464646;
 }
 footer form{
-  text-align: left;
+  align-items: center;
+  display: flex;
+   flex-direction: column;
+  justify-content:left;
+  padding: 10px;
+ 
 }
-footer form .nome {
+footer form #nome {
   width:300px ;
   height:50px ;
   border: none;
-  padding: 5px;
 }
 textarea{
   resize: none;
@@ -94,10 +98,8 @@ textarea{
   border: none;
   padding: 5px;
   border-radius: 4px;
+  border-bottom: #464646;
 
-}
-label{
-  padding: 5px;
 }
 .footer-btn{
   width: 150px;
@@ -106,4 +108,59 @@ label{
   border: none;
   background-color: var(--main);
   color: #fff;
+}
+p.copy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: 100px;
+  width: 100%;
+  font-size:var(--p16) ;
+  font-weight: 600;
+}
+label{
+  padding: 5px;
+}
+.buscar{
+  background-color: #F5F5F5;
+  border-radius: 12px;
+  padding: 8px;
+}
+.escrever{
+  width: 16px;
+  border: none;
+  background-color: transparent;
+  color:#a2a2a2 ;
+  font-size: var(--p14);
+}
+.escrever:active{
+  display: contents;
+}
+.escrever:focus, select:focus{
+  outline: none;
+}
+.procurar{
+  border: none;
+  background-color: transparent;
+}
+.procurar:hover{
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+svg.lupa{
+text-align: right;
+z-index: 999;
+}
+
+@media (min-width:768px){
+  .escrever{
+    width: 180px;
+    border: none;
+    background-color: transparent;
+    color:#a2a2a2 ;
+    font-size: var(--p14);
+  }
+
 }
